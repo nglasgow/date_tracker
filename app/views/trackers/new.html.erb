@@ -1,0 +1,12 @@
+<h2>New Tracker</h2>
+<%= form_for(@tracker) do |f| %>
+  <p>
+    <%= f.label :date %><br />
+    <%= f.text_field :date %>
+  </p>
+
+  <p>
+    <%= f.label :description %><br />
+    <%=f.text_field :description %>
+  <%= f.submit %>
+<% end %>
