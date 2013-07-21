@@ -1,5 +1,6 @@
 <h2>New Tracker</h2>
 <%= form_for(@tracker) do |f| %>
+<%= f.error_messages %>
   <p>
     <%= f.label :date %><br />
     <%= f.text_field :date %>

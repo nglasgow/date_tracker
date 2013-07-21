@@ -13,7 +13,8 @@ class TrackersController < ApplicationController
       flash[:notice] = "Tracker has been created."
       redirect_to @tracker
     else
-      # nothing, yet
+      flash[:alert] = "Tracker has not been created."
+      render :action => "new"
     end
   end
 
