@@ -1,1 +1,8 @@
-<%= link_to "New Tracker", new_tracker_path %>
+<h2>Important Date Tracker</h2>
+<ul>
+  <% @tracker.each do |tracker| %>
+    <li><%= link_to "#{tracker.date}", tracker %></li>
+  <% end %>
+</ul>
+
+<%= link_to "Enter New Date", new_tracker_path %>

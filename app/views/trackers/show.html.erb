@@ -1,2 +1,6 @@
-<% title(@tracker.date, "Trackers") %>
-<h2><%= @tracker.date %></h2>
+<% title(@tracker.name, "Trackers") %>
+<h2><%= @tracker.name %></h2>
+<p><%= @tracker.date %></p>
+<p><%= @tracker.description %></p>
+
+<%= link_to "Back to List", trackers_path %>

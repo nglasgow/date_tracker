@@ -1,6 +1,6 @@
 class TrackersController < ApplicationController
   def index
-
+    @tracker = Tracker.where(['date <= ?', Date.today]).order('date desc')
   end
 
   def new
